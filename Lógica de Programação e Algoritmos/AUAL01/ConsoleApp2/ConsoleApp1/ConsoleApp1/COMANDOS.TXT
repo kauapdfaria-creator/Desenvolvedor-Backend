@@ -1,0 +1,76 @@
+using System;
+using static System.Console;
+
+ForegroundColor = ConsoleColor.White;
+BackgroundColor = ConsoleColor.Magenta;
+double numero = 1,73598597;
+WriteLine($"Salario = R${numero:n}");
+WriteLine("Hello, World!");
+Console.Write("SENAI"); // SAIDA DE DADOS
+WriteLine("\t\t\t\tNEYMAR");
+Title = "Aplicativo Senai";
+string escola = "AMERICANA";
+WriteLine($"Senai {escola}");
+WriteLine($"Senai{escola}");
+ForegroundColor = ConsoleColor.Red;
+WriteLine("NEYMAR");
+ForegroundColor = ConsoleColor.Blue;
+WriteLine("NEYMAR");
+ResetColor();
+WriteLine("NEYMAR");
+ReadKey();
+
+
+//Processamneto de dados 
+// Operadores aritimeticos
+int a = 1 + 1; //0p soma
+int b = 2 - 1; //0p sub
+int c = 3 * 1; //0p mult
+double d = 4 / 1; //0p divisao
+double e = 2 * 2 * 2; //Potencia
+double f = Math.Sqrt(4); //Raiz quadrada
+Math.Pow(2, 3) ///Potencia 
+double k = 1 + (1 - (2 * 3)) / 4;
+double j = 2 % 2; //Modulo ou resto da divisao
+int y = 0;
+Console.WriteLine(y);
+y++; //Incremento em
+y--; / Decremento em um
+y += 2; //Soma e atribuiçao
+y -= 2; //subtraçao e atribuiçao
+y *= 2; //Multiplicaçao e atribuiçao
+y /= 2; //Divisao e atribuiçao
+
+
+
+//Entrada de dados
+Console.Write("Digite o seu nnome: ");
+string nome = (Console.ReadLine()); // Entrada de dados 
+Console.WriteLine("Digite sua idade; ");
+int idade = int.Parse(Console.ReadLine());//Converçao de dados 
+Console.WriteLine("Digite seu salario: R$");
+double salario = double.Parse(Console.ReadLine());
+Console.WriteLine($"Nome; {nome}, Idade: {idade}, Salario; R${salario}");
+
+
+//Declaraçao de variaveis 
+double largura;
+double comprimento;
+double area;
+double valor;
+double preco;
+
+//Entrda de dados 
+Console.Write("Digite a largura do terreno");
+largura = double.Parse(Console.ReadLine());
+Console.Write("Digite o comprimento do terreno: ");
+comprimento = double.Parse(Console.ReadLine());
+Console.Write("digite o valor do metro quadrado do terreno");
+valor = double.Parse(Console.ReadLine());
+
+//Processamento de dados
+area = largura * comprimento;
+preco = area * valor;
+
+//saida de dados 
+Console.WriteLine($"À`rea do terreno: {area:n}\nPreço do terreno: R$ {preco:n}");
